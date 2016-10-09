@@ -5,8 +5,8 @@ include('StringCalculator.php');
 
 class StringCalculatorTest extends \PHPUnit_Framework_TestCase
 {
-    public function test_StringCalculator_AcceptsOneNumber_AndReturnsIt()
+    public function test_StringCalculator_AcceptsNull_AndReturnsZero()
     {
-        $this->assertEquals(1, (new StringCalculator())->add(1));
+        $this->assertEquals(0, (new StringCalculator())->add());
     }
 }
